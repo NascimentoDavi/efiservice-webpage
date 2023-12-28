@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- JavaScript Bootstrap CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- Hand-made Css -->
+    <link rel="stylesheet" href="main-style.css">
+
+    <title>Main Page</title>
+</head>
+
+<body>
+    
+    <nav class="navbar bg-light navbar-expand-sm py-3 d-flex border-bottom sticky-top">
+        <div class="container" id="navbar-container">
+
+            <!-- Brand -->
+            <a href="./main.html" class="navbar-brand d-flex align-items-center">
+                <img src="./logos/EFISERVICE_PNG.png" style="height: 45px; width: 77px;" alt="Efiservice-Serviços">
+            </a>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="menu-navbar">
+                <div class="navbar-nav ms-auto gap-4">   
+                    <a href="main2.html" class="nav-link disabled fs-4 text-center rounded-pill px-3 navbar-link"><strong>Home</strong></a>
+                    <a href="" class="nav-link fs-4 text-center rounded-pill px-3 navbar-link"><strong>Diferenciais</strong></a>
+                    <a href="./services.html" class="nav-link fs-4 text-center rounded-pill px-3 navbar-link"><strong>Serviços</strong></a>
+                    <a href="contact.html" class="nav-link fs-4 text-center rounded-pill px-3 text-light navbar-contato"><strong>Contato</strong></a>            
+                </div>
+            </div>
+
+            <!-- Contact and Services separated links -->
+            <div class="text-center d-flex flex-row justify-content-center gap-3 align-items-center">
+                <a href="./contact.html" class="d-sm-none d-md-none d-lg-none ms-auto nav-link fs-4 text-center rounded-pill px-3 py-2 text-light navbar-contato"><strong>Contato</strong></a>
+                <a href="./services.html" class="d-sm-none d-md-none d-lg-none nav-link fs-4 text-center rounded-pill px-3 py-2 navbar-link"><strong>Serviços</strong></a>
+
+                <button class="btn ms-5 d-none d-sm-flex p-3 offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#painel">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            </div>
+
+            <!-- Offcanvas Button -->
+            <button class="btn navbar-toggler offcanvas-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#painel">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" id="painel" tabindex="-1">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title">
+                <a href="./main.html" class="navbar-brand d-flex align-items-center">
+                    <img src="./logos/EFISERVICE_PNG.png" style="height: 45px; width: 77px;" alt="Efiservice-Serviços">
+                </a>
+            </h5>
+            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="py-3">
+                <a href="contact.html" class="nav-link fs-4 text-center rounded-pill px-2 py-2 text-light navbar-contato mx-4"><strong>Contato</strong></a>            
+            </div>
+            <div class="d-flex flex-column gap-5 ms-3 py-5">
+                <a href="" class="offcanvas-link display-6"><strong>Home</strong></a>
+                <a href="" class="offcanvas-link display-6"><strong>Diferencial</strong></a>
+                <a href="" class="offcanvas-link display-6"><strong>Serviços</strong></a>
+                <a href="" class="offcanvas-link display-6"><strong>Sobre nós</strong></a>
+                <a href="" class="offcanvas-link display-6"><strong>Trabalhe Conosco</strong></a>
+            </div>
+            <div class="d-flex offcanvas-body-bottom ms-4 gap-4">
+                <a href="" class="offcanvas-body-bottom-link"><i class="bi bi-whatsapp fs-1"></i></a>
+                <a href="" class="offcanvas-body-bottom-link"><i class="bi bi-instagram fs-1"></i></a>
+                <a href="" class="offcanvas-body-bottom-link"><i class="bi bi-facebook fs-1"></i></a>
+                <a href="" class="offcanvas-body-bottom-link"><i class="bi bi-telephone fs-1"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="carousel-container mb-5">
+        <div class="carousel slide" data-bs-ride="carousel" id="ads">
+            <!-- Carousel Indicators -->
+            <div class="carousel-indicators">
+                <button class="active" data-bs-target="#ads" data-bs-slide-to="0"></button>
+                <button class="" data-bs-target="#ads" data-bs-slide-to="1"></button>
+                <button class="" data-bs-target="#ads" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href=""><img src="./img/carousel/combo-fechadura.png" alt="promoção" class="d-block w-100"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img src="./img/carousel/combo-fechadura.png" alt="promoção" class="d-block w-100"></a>
+                </div>
+                <div class="carousel-item">
+                    <a href=""><img src="./img/carousel/combo-fechadura.png" alt="promoção" class="d-block w-100"></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" data-bs-target="#ads" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" data-bs-target="#ads" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- After Carousel Text -->
+    <div class="d-flex justify-content-center align-items-center pt-1 middle-page-text">
+        <p class="display-5 text-center">O que nos faz <span class="important-word"><a href="./services.html"><strong>diferentes</strong></a></span>:</p>
+    </div>
+
+    <!-- Positive Points -->
+    <div class="container my-3 d-sm-flex gap-5">
+        <div class="accordion" id="acc-all">
+            <div class="accordion-item mb-2 mb-sm-3">
+                <div class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-1"><p class="lead my-0">Instalação Segura</p></button>
+                </div>
+                <div class="accordion-collapse collapse show" id="acc-1">
+                    <div class="accordion-body">
+                        <p class="lead text-center">Nos responsabilizamos em entregar serviços de alta qualidade e eficiência, sem danos ao patrimônio e total eficiência.</p>
+                        <p class="text-center"><i class="bi bi-shield-check fs-1"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mb-2 mb-sm-0">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-2"><p class="lead my-0">Qualidade & Garantia</p></button>
+                </div>
+                <div class="accordion-collapse collapse" id="acc-2">
+                    <div class="accordion-body">
+                        <p class="lead text-center">A sua satisfação está em primeiro lugar, por isso, oferecemos o melhor serviço do mercado com garantia, preço justo e tranquilidade.</p>
+                        <p class="text-center"><i class="bi bi-piggy-bank fs-1"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item mb-2 mb-sm-3">
+                <div class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#acc-3"><p class="lead my-0">Pontualidade</p></button>
+                </div>
+                <div class="accordion-collapse collapse show" id="acc-3">
+                    <div class="accordion-body">
+                        <p class="lead text-center">Cumprimos com a promessa, chegamos no dia e período agendado e saímos deixando tudo perfeito. Nossa eficiência além do nome!</p>
+                        <p class="text-center"><i class="bi bi-clock fs-1"></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item mb-3 mb-sm-0">
+                <div class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#acc-4"><p class="lead my-0">Equipe Especializada</p></button>
+                </div>
+                <div class="accordion-collapse collapse" id="acc-4">
+                    <div class="accordion-body">
+                        <p class="lead text-center">Contamos com equipes profissionais para oferecer um serviço de alta performance lhe entregando a confiança que você precisa.</p>
+                        <p class="text-center"><i class="bi bi-people fs-1"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Item's Carousel -->
+    <div class="carousel-service pt-5">
+        <div>
+            <p class="display-6 text-center">Alguns dos diversos produtos que instalamos:</p>
+        </div>
+
+        <div class="logos text-center py-4 d-flex flex-row gap-1">
+            <div class="logos-slide d-flex flex-row gap-1">
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/coifa.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Coifa</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/geladeira.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Geladeira</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/tv.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">TV</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/fechadura.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Fechadura</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/coifa.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Coifa</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/geladeira.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Geladeira</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/tv.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">TV</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/fechadura.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Fechadura</p>
+                </div>
+            </div>
+            <div class="logos-slide d-flex flex-row gap-1">
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/coifa.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Coifa</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/geladeira.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Geladeira</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/tv.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">TV</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/fechadura.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Fechadura</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/coifa.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Coifa</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/geladeira.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Geladeira</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/tv.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">TV</p>
+                </div>
+                <div class="logos-slide-items rounded-5">
+                    <img src="./img/carousel-services/fechadura.png" alt="Coifa" class="carousel-services-img rounded-5">
+                    <p class="">Fechadura</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Cards -->
+    <div class="container py-5 px-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mb-5">
+            <div class="col">
+                <div class="card h-100 border border-3 border-dark">
+                    <img src="./img/cards-services/card-fechadura.png" alt="Fechadura" class="card-img-top">
+                    <h4 class="card-header text-center">Fechadura Eletrônica</h4>
+                    <div class="card-body d-flex flex-column justify-content-around gap-2">
+                        <p class="card-text text-center lead">Para a sua segurança, instalamos os modelos mais modernos de fechaduras eletrônicas disponíveis no mercado. Com a instalação correta é possível garantir o funcionamento perfeito do aparelho, trazendo segurança para você e sua família.
+                        </p>
+                        <p class="important-word text-center mb-2 h5"><a href="" class="w-100"><strong>Solicitar Orçamento</strong></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border border-3 border-dark">
+                <img src="./img/cards-services/card-depurador-coifa-parede-ilha.png" alt="Coifa | Depurador" class="card-img-top">
+                <h4 class="card-header text-center">Depurador & Coifa Ilha ou Parede</h4>
+                <div class="card-body d-flex flex-column justify-content-around gap-2">
+                    <p class="card-text text-center lead">A instalação de coifas é ideal para cozinhas domésticas. Instalamos Coifas de ilha, de Parede e Depuradores de ar em cozinha residencial. Entre em contato conosco para um orçamento e fale com um dos nossos consultores para agendarmos.
+                    </p>
+                    <p class="important-word text-center mb-2 h5"><a href="" class="w-100"><strong>Solicitar Orçamento</strong></a></p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border border-3 border-dark">
+                <img src="./img/cards-services/card-tv.png" alt="Tv" class="card-img-top">
+                <h4 class="card-header text-center">TV's</h4>
+                <div class="card-body d-flex flex-column justify-content-around gap-2">
+                    <p class="card-text text-center lead">A instalação de TV parece muito simples, mas também é comum os problemas aparecerem. Instalamos seu equipamento na parede, configuramos os aplicativos, damos orientação de uso e deixamos tudo limpo e funcionando. Evite dores de cabeça.
+                    </p>
+                    <p class="important-word text-center mb-2 h5"><a href="" class="w-100"><strong>Solicitar Orçamento</strong></a></p>
+                </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border border-3 border-dark">
+                    <img src="./img/cards-services/card-lava-roupa.png" alt="Fechadura" class="card-img-top">
+                    <h4 class="card-header text-center">Lava Roupa, Lava & Seca  e Lava Louça</h4>
+                    <div class="card-body d-flex flex-column justify-content-around gap-2">
+                        <p class="card-text text-center lead">Alguns eletrodomésticos são multifuncionais, como é o caso da lavadora que seca. Já pensou em ter uma funcionando na sua casa? Contrate nossos serviços e torne esse sonho realidade. Além da Lava e Seca, também instalamos diversos modelos de lava roupas e lava louças.
+                        </p>
+                        <p class="important-word text-center mb-2 h5"><a href="" class="w-100"><strong>Solicitar Orçamento</strong></a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100 border border-3 border-dark">
+                    <img src="./img/cards-services/card-geladeira.png" alt="Fechadura" class="card-img-top">
+                    <h4 class="card-header text-center">Geladeira, Frent Door e Side by Side</h4>
+                    <div class="card-body d-flex flex-column justify-content-around gap-2">
+                        <p class="card-text text-center lead">Trabalhamos com a instalação de Geladeiras de todos os tamanhos, desde os modelos convencionais até os mais avançados como French Door e Side by Side. Garantimos o mais perfeito funcionamento para a conservação de todos os alimentos armazenados em seu novo refrigerador.
+                        </p>
+                        <p class="important-word text-center mb-2 h5"><a href="" class="w-100"><strong>Solicitar Orçamento</strong></a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border border-3 border-dark">
+                    <img src="./img/cards-services/card-home-theather.png" alt="Fechadura" class="card-img-top">
+                    <h4 class="card-header text-center">Home Theather, Receiver e Soundbar</h4>
+                    <div class="card-body d-flex flex-column justify-content-around gap-2">
+                        <p class="card-text text-center lead">Quer transformar o seu ambiente numa sala de cinema com um som realista? Temos a solução para os mais diversos equipamentos de áudio. Instalamos desde um Soundbar, até Receivers e Home Theaters. Contrate agora mesmo os nossos serviços e torne esse projeto uma realidade.
+                        </p>
+                        <p class="important-word text-center mb-2 h5"><a href="" class="w-100"><strong>Solicitar Orçamento</strong></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+
+</body>
+
+</html>
