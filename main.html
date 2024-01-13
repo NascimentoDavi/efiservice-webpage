@@ -331,7 +331,46 @@
         </div>
     </div>
 
-    <!---->
+    <!-- Form -->
+    <div class="container-fluid d-flex border rounded-4" id="form">
+
+        <form class="d-flex flex-column gap-1 align-items-center my-4" action="" id="form-contact">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nome Completo</label>
+                <input class="form-control" type="text" id="name" placeholder="José Dias Cavalcanti">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="e-mail" >E-mail</label>
+                <input class="form-control" type="email" id="e-mail" placeholder="usuario@dominio.com">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="neighborhood">Bairro</label>
+                <input class="form-control" type="text" id="neighborhood" placeholder="Rio de Janeiro">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="phone">Número de telefone</label>
+                <input class="form-control" type="tel" id="phone" placeholder="(00)00000-0000">
+            </div>
+            <div class="mb-3">
+                <p class="mb-1" for="message">Mensagem</p>
+                <textarea class="form-control" name="client-message" id="message" cols="30" rows="10" placeholder="Preciso instalar..."></textarea>
+            </div>
+            <button class="btn btn-secondary" type="submit">Enviar</button>
+        </form>
+
+        <div id="form-side-message" class="">
+            <div id="form-side-message-content" class="pt-4">
+                <h4>Nos envie uma mensagem e solicite um orçamento</h4>
+                <p class="lead">
+                    Caso desejar, também pode entrar em contato conosco via e-mail para solicitar um orçamento e obter maiores informações sobre todos os nossos serviços de instação, ou também se preferir, pode clicar no botão do WhatsApp
+                    para falar com um dos nossos consultores.
+                </p>
+            </div>
+            <div id="form-side-message-services" class="d-flex align-items-center justify-content-center">
+                <span class="display-6 border rounded-4 p-2 border-1 border-secondary">+ 11.507 Serviços Prestados</span>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <div id="footer" class="container-fluid d-flex justify-content-around py-4 mt-4 align-items-center">
