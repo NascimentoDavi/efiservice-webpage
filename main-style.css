@@ -195,3 +195,17 @@ nav {
         height: 125px;
     }
 }
+
+/* Footer */
+#footer {
+    border-top: 3px solid var(--secondary-color);
+    background-color: var(--third-color);
+}
+
+.footer-social-media-icons {
+    color: var(--text-color);
+}
+
+.footer-social-media-icons:hover {
+    color: var(--primary-color);
+}
